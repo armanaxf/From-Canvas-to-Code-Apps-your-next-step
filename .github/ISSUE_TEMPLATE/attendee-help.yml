@@ -1,0 +1,64 @@
+name: "Help Request"
+description: "Ran into a problem during or after the workshop? Let us know and we'll help."
+title: "[Help]: "
+labels: ["help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out! We'll do our best to get back to you quickly.
+        Please fill in as much as you can — it helps us understand what happened.
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which module were you working on?
+      options:
+        - "01 - Tooling Setup"
+        - "02 - Planning Your App"
+        - "03 - Dataverse & Connectors"
+        - "04 - Governance & ALM"
+        - "05 - Deploy & Ship"
+        - "Not sure / General question"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem in your own words. There's no such thing as too much detail here!
+      placeholder: "I was trying to connect to Dataverse and got an error message..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-message
+    attributes:
+      label: Error message (if any)
+      description: Copy and paste any error messages you saw. If you have a screenshot, you can drag and drop it here.
+      placeholder: "Paste the error message here..."
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-you-tried
+    attributes:
+      label: What have you tried so far?
+      description: Let us know what you've already attempted — it helps us skip straight to the solution.
+      placeholder: "I tried restarting VS Code and running the command again..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: What operating system are you using?
+      options:
+        - Windows
+        - Mac
+        - Linux
+        - Other
+    validations:
+      required: true
