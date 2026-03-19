@@ -1,0 +1,23 @@
+{
+  "name": "team-asset-register",
+  "version": "1.0.0",
+  "description": "Team Asset Register — Power Platform Code App built at EoEPPS workshop",
+  "scripts": {
+    "build": "pcf-scripts build",
+    "clean": "pcf-scripts clean",
+    "lint": "pcf-scripts lint",
+    "rebuild": "pcf-scripts build --clean",
+    "start": "pcf-scripts start watch"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "pcf-scripts": "^1.29.5",
+    "pcf-start": "^1.29.5",
+    "typescript": "^5.3.3"
+  }
+}

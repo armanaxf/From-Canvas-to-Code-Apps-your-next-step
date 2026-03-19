@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="EoEPPS" constructor="TeamAssetRegister" version="1.0.0" display-name-key="Team Asset Register" description-key="A Code App to log equipment, assign items to people, and track status." control-type="virtual" >
+    <external-service-usage enabled="true">
+    </external-service-usage>
+    <property name="datasetGrid" display-name-key="Assets" description-key="Bound to the Asset table" of-type="DataSet" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="18.2.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
