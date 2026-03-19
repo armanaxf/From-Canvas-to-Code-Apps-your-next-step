@@ -31,15 +31,25 @@ Please complete these steps **before the workshop day** so we can hit the ground
 
 ---
 
-## Workshop Modules
+## What You'll Build
 
-| # | Module | What You'll Do |
-|---|--------|----------------|
-| 01 | [Tooling Setup](modules/01-tooling-setup/) | Get your development environment ready and confirm everything works |
-| 02 | [Planning Your App](modules/02-planning-your-app/) | Design your app's structure using what you already know from Canvas Apps |
-| 03 | [Dataverse & Connectors](modules/03-dataverse-connectors/) | Connect your Code App to Dataverse and work with data the way you're used to |
-| 04 | [Governance & ALM](modules/04-governance-alm/) | Set up solutions, environments, and deployment pipelines like a pro |
-| 05 | [Deploy & Ship](modules/05-deploy-and-ship/) | Build, test, and deploy your finished app to a real environment |
+A **Team Asset Register** — an app to log equipment (laptops, monitors, accessories), assign items to people, and track their status. It's practical, uses real Dataverse data, and covers everything you need to know about Code Apps.
+
+## Schedule
+
+| Time | Duration | What's Happening |
+|------|----------|-----------------|
+| 09:00 | 30 min | Registration & Welcome Coffee |
+| 09:30 | 30 min | Welcome & Housekeeping |
+| 10:00 | 40 min | [**Module 01 — Tooling Setup**](modules/01-tooling-setup/) — Verify your environment and get everything running |
+| 10:40 | 35 min | [**Module 02 — Planning Your App**](modules/02-planning-your-app/) — Map Canvas App concepts to Code App equivalents |
+| 11:15 | 10 min | *Break & catch-up buffer* |
+| 11:25 | 65 min | [**Module 03 — Dataverse & Connectors**](modules/03-dataverse-connectors/) — Connect to Dataverse and build the data layer |
+| 12:30 | 60 min | *Lunch & Networking* |
+| 13:30 | 75 min | [**Module 03 (continued) + Module 04 — Governance & ALM**](modules/04-governance-alm/) — Finish data work, then solutions, Git & source control |
+| 14:45 | 10 min | *Break & catch-up buffer* |
+| 14:55 | 50 min | [**Module 05 — Deploy & Ship**](modules/05-deploy-and-ship/) — Build, package, and deploy your finished app |
+| 15:45 | 15 min | Wrap-up, feedback & what's next |
 
 ---
 
