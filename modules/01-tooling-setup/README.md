@@ -15,7 +15,7 @@ By the end of this module, you will:
 
 ## What You'll Build
 
-Nothing to "build" yet — this module is about making sure your tools are ready. Think of it like laying out your paintbrushes before you start painting.
+Nothing to "build" yet - this module is about making sure your tools are ready. Think of it like laying out your paintbrushes before you start painting.
 
 You'll verify your setup by running a few simple commands and seeing the expected output.
 
@@ -24,7 +24,7 @@ You'll verify your setup by running a few simple commands and seeing the expecte
 ### Step 1: Open VS Code (2 min)
 
 1. Find **Visual Studio Code** in your Start menu (or Applications on Mac) and open it
-2. You'll see a Welcome tab — feel free to close it
+2. You'll see a Welcome tab - feel free to close it
 3. Take a moment to look around. Notice the **sidebar** on the left, the **editor area** in the middle, and the **status bar** at the bottom
 
 > **Canvas App parallel:** This is your new studio. The sidebar is like the left panel in Power Apps Studio where you see your screens and components. The editor area is where you'll write code instead of dragging controls.
@@ -32,7 +32,7 @@ You'll verify your setup by running a few simple commands and seeing the expecte
 ### Step 2: Open the integrated terminal (2 min)
 
 1. Press **Ctrl + `** (the backtick key, usually above Tab) to open the terminal
-2. A panel will appear at the bottom of VS Code — this is your command line
+2. A panel will appear at the bottom of VS Code - this is your command line
 3. You'll type commands here instead of clicking buttons
 
 > **Canvas App parallel:** Think of the terminal as the formula bar, but for your whole computer. Instead of writing `Set(myVar, 42)`, you'll type commands like `npm install`.
@@ -47,7 +47,7 @@ git --version
 
 **Expected output:** Something like `git version 2.43.0` (the exact number doesn't matter)
 
-**If you see an error:** Raise your hand — we'll get it sorted. Or check the [setup guide](../../docs/SETUP.md#step-2-install-git).
+**If you see an error:** Raise your hand - we'll get it sorted. Or check the [setup guide](../../docs/SETUP.md#step-2-install-git).
 
 ### Step 4: Verify Node.js is installed (2 min)
 
@@ -83,7 +83,7 @@ Then try `pac --version` again.
 
 ### Step 6: Connect to your Power Platform environment (5 min)
 
-This is the important one — it connects your machine to your Dataverse environment.
+This is the important one - it connects your machine to your Dataverse environment.
 
 ```bash
 pac auth create
@@ -99,13 +99,13 @@ pac auth list
 
 **Expected output:** You should see your environment listed with a `*` next to the active one.
 
-> **Canvas App parallel:** This is like adding a data connection in Canvas Apps — you're telling your tools which environment to talk to.
+> **Canvas App parallel:** This is like adding a data connection in Canvas Apps - you're telling your tools which environment to talk to.
 
 ### Step 7: Check GitHub Copilot is active (3 min)
 
 1. Look at the **bottom-right** of VS Code's status bar
 2. You should see a small Copilot icon (it looks like two overlapping brackets)
-3. If it says "Copilot" with a green dot — you're good!
+3. If it says "Copilot" with a green dot - you're good!
 4. If it's greyed out or missing, click the Extensions icon in the sidebar (it looks like four squares), search for "GitHub Copilot", and install it
 
 **Quick test:** Create a new file (File > New File), save it as `test.ts`, and type:
@@ -118,7 +118,7 @@ Wait a second. Copilot should suggest the rest of the function in grey text. Pre
 
 > **Magic moment:** Copilot just wrote code for you. It'll do this throughout the workshop, helping you write things you've never written before.
 
-Delete the test file when you're done — you won't need it.
+Delete the test file when you're done - you won't need it.
 
 ### Step 8: Clone the workshop repo and open the starter app (10 min)
 
@@ -141,7 +141,7 @@ cd From-Canvas-to-Code-Apps-your-next-step
 code .
 ```
 
-(VS Code may reopen in a new window — that's fine.)
+(VS Code may reopen in a new window - that's fine.)
 
 4. Navigate to the starter app and install its dependencies:
 
@@ -165,8 +165,8 @@ npm run build
 Take a moment to look at what you've got:
 
 1. In the VS Code sidebar, expand the `starter-app` folder
-2. Open `TeamAssetRegister/components/App.tsx` — this is the main file
-3. Read the comments at the top — they explain what each part does in Canvas App terms
+2. Open `TeamAssetRegister/components/App.tsx` - this is the main file
+3. Read the comments at the top - they explain what each part does in Canvas App terms
 4. Open `TeamAssetRegister/components/AssetList.tsx` and `AssetForm.tsx` too
 
 Don't worry about understanding every line. The comments will guide you, and we'll walk through everything in Module 02.
@@ -201,7 +201,7 @@ Run through this checklist before we move on:
 
 ## Stuck?
 
-- Double-check the [setup guide](../../docs/SETUP.md) — it covers common problems and fixes
-- Ask a neighbour — they might have just solved the same issue
-- Raise your hand — Charles, Josh, or a helper will come to you
+- Double-check the [setup guide](../../docs/SETUP.md) - it covers common problems and fixes
+- Ask a neighbour - they might have just solved the same issue
+- Raise your hand - Charles, Josh, or a helper will come to you
 - Still stuck after the event? [Open an issue](../../issues/new/choose)

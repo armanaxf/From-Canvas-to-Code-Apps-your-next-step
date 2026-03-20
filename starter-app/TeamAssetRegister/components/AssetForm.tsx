@@ -1,5 +1,5 @@
 /*
- * AssetForm.tsx — Create or edit an asset
+ * AssetForm.tsx - Create or edit an asset
  *
  * In Canvas Apps, this is like an Edit Form control. It shows fields
  * for each column and has Save / Cancel buttons.
@@ -16,7 +16,7 @@ interface AssetFormProps {
   onCancel: () => void;
 }
 
-// Default values for a new asset — like the Default property on a Form in Canvas Apps
+// Default values for a new asset - like the Default property on a Form in Canvas Apps
 const emptyAsset: Asset = {
   id: "",
   name: "",
@@ -35,7 +35,7 @@ const AssetForm: React.FC<AssetFormProps> = ({ asset, onSave, onCancel }) => {
   // Start with either the existing asset's values or blank defaults
   const [formData, setFormData] = React.useState<Asset>(asset || emptyAsset);
 
-  // Update a single field — like Patch() for one column in Canvas Apps
+  // Update a single field - like Patch() for one column in Canvas Apps
   const handleChange = (
     field: keyof Asset,
     value: string
@@ -44,7 +44,7 @@ const AssetForm: React.FC<AssetFormProps> = ({ asset, onSave, onCancel }) => {
   };
 
   const handleSubmit = () => {
-    // Basic validation — like IsBlank() checks in Canvas Apps
+    // Basic validation - like IsBlank() checks in Canvas Apps
     if (!formData.name.trim()) {
       alert("Please enter an asset name.");
       return;

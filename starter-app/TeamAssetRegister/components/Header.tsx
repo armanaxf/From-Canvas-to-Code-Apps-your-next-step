@@ -1,5 +1,5 @@
 /*
- * Header.tsx — The top bar of your app
+ * Header.tsx - The top bar of your app
  *
  * In Canvas Apps, this is like having a header label and an "Add" button
  * at the top of your screen.

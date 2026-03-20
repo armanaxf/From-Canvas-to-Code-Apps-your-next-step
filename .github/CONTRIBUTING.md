@@ -4,7 +4,7 @@
 
 ## Who Is This For?
 
-This guide is for **Charles, Josh, and any co-hosts or helpers** who need to update the workshop materials. If you're an attendee, you don't need to worry about this — just enjoy the workshop!
+This guide is for **Charles, Josh, and any co-hosts or helpers** who need to update the workshop materials. If you're an attendee, you don't need to worry about this - just enjoy the workshop!
 
 ## How the Repo Is Organised
 
@@ -43,7 +43,7 @@ For new content, structural changes, or anything you'd like reviewed:
 ## Content Guidelines
 
 - **Tone**: Friendly, encouraging, jargon-light. Our audience are experienced Canvas App makers who may feel nervous about "pro code". Reassure and empower.
-- **Structure**: Each module README follows a consistent template — Learning Objectives, What You'll Build, Step-by-Step Instructions, Key Commands/Concepts, and a Stuck? section. Please keep this consistent.
+- **Structure**: Each module README follows a consistent template - Learning Objectives, What You'll Build, Step-by-Step Instructions, Key Commands/Concepts, and a Stuck? section. Please keep this consistent.
 - **Links**: Use relative links where possible (e.g., `../../docs/SETUP.md` rather than full URLs). This keeps things working if the repo is forked.
 - **Screenshots**: Place them in the same folder as the README that references them. Use descriptive file names (e.g., `vscode-terminal-open.png`).
 

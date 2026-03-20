@@ -1,7 +1,7 @@
 /*
- * Team Asset Register — Main entry point
+ * Team Asset Register - Main entry point
  *
- * This is the "brain" of your Code App. It's like the App.OnStart in Canvas Apps —
+ * This is the "brain" of your Code App. It's like the App.OnStart in Canvas Apps  - 
  * this is where everything begins.
  *
  * During the workshop, you'll add data-fetching logic and connect this to your
@@ -19,7 +19,7 @@ export class TeamAssetRegister
   private notifyOutputChanged: () => void;
 
   constructor() {
-    // Nothing to set up here yet — think of this like a blank App.OnStart
+    // Nothing to set up here yet - think of this like a blank App.OnStart
   }
 
   /**
@@ -38,7 +38,7 @@ export class TeamAssetRegister
 
   /**
    * Called whenever the component needs to re-render.
-   * Think of this like the screen's OnVisible event — it runs every time
+   * Think of this like the screen's OnVisible event - it runs every time
    * something changes and the screen needs to update.
    */
   public updateView(
@@ -59,7 +59,7 @@ export class TeamAssetRegister
   }
 
   /**
-   * Cleanup — called when the component is removed from the page.
+   * Cleanup - called when the component is removed from the page.
    */
   public destroy(): void {
     // Nothing to clean up yet

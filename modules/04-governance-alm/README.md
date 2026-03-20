@@ -19,7 +19,7 @@ A governed, source-controlled, solution-packaged version of the app you've been 
 
 ## Step-by-Step Instructions
 
-### Step 1: Why governance matters — a quick chat (5 min)
+### Step 1: Why governance matters - a quick chat (5 min)
 
 Before we touch any tools, let's talk about why this matters.
 
@@ -30,7 +30,7 @@ Before we touch any tools, let's talk about why this matters.
 - It's hard to know who changed what and when
 
 **In Code Apps**, governance is built in:
-- Your code lives in Git — every change is tracked forever
+- Your code lives in Git - every change is tracked forever
 - Solutions package everything neatly
 - Deployment can be automated
 - Multiple people can work on the same app without stepping on each other
@@ -39,7 +39,7 @@ Before we touch any tools, let's talk about why this matters.
 
 ### Step 2: Create a Power Platform solution (10 min)
 
-A solution is like a container — it holds your app, your tables, and anything else your app needs. You've probably seen solutions in the Maker Portal before.
+A solution is like a container - it holds your app, your tables, and anything else your app needs. You've probably seen solutions in the Maker Portal before.
 
 1. Open your terminal in VS Code
 2. Navigate to the root of the workshop repo (not the starter-app folder):
@@ -68,15 +68,15 @@ pac solution add-reference --path starter-app
 
 Look at the new files in your project:
 
-- `Solution/` folder — contains the solution definition
-- `Solution/src/Other/Solution.xml` — the solution's "ID card"
+- `Solution/` folder - contains the solution definition
+- `Solution/src/Other/Solution.xml` - the solution's "ID card"
 - The `add-reference` command linked your `starter-app` component to this solution
 
 When you build the solution later (Module 05), it will automatically include your Code App component.
 
 ### Step 4: Your first Git commit (15 min)
 
-Git tracks changes to your code — like a super-powered version history. Let's save everything you've built so far.
+Git tracks changes to your code - like a super-powered version history. Let's save everything you've built so far.
 
 **4a. Check what's changed:**
 
@@ -92,9 +92,9 @@ You'll see a list of files in red (untracked) and green (staged). Red means Git 
 git add .
 ```
 
-This tells Git "I want to include all these files in my next save." Run `git status` again — everything should be green now.
+This tells Git "I want to include all these files in my next save." Run `git status` again - everything should be green now.
 
-> **Canvas App parallel:** This is like selecting which changes you want to save. In Canvas Apps, you just hit Save and everything goes. With Git, you can choose exactly what to include — which is powerful when you're working on multiple things at once.
+> **Canvas App parallel:** This is like selecting which changes you want to save. In Canvas Apps, you just hit Save and everything goes. With Git, you can choose exactly what to include - which is powerful when you're working on multiple things at once.
 
 **4c. Create your commit:**
 
@@ -110,7 +110,7 @@ A commit is a snapshot of your code at this point in time. The message after `-m
 git log --oneline
 ```
 
-You should see your commit at the top. This is your version history — and unlike Canvas Apps, it never gets deleted.
+You should see your commit at the top. This is your version history - and unlike Canvas Apps, it never gets deleted.
 
 ### Step 5: Push to GitHub (10 min)
 
@@ -171,7 +171,7 @@ git commit -m "Update header subtitle"
 git checkout main
 ```
 
-Open `Header.tsx` again — your change is gone! It's safely on the `my-feature` branch. Switch back to see it:
+Open `Header.tsx` again - your change is gone! It's safely on the `my-feature` branch. Switch back to see it:
 
 ```bash
 git checkout my-feature
@@ -207,7 +207,7 @@ For more detail on governance practices, see the [Governance Guide](../../docs/G
 - [ ] You created and switched between branches
 - [ ] You understand the basic flow: code → commit → push → deploy
 
-**All ticked? You've just done something most Canvas App makers never do — and it wasn't that hard, was it?**
+**All ticked? You've just done something most Canvas App makers never do - and it wasn't that hard, was it?**
 
 ## Key Commands / Concepts
 
@@ -222,11 +222,11 @@ For more detail on governance practices, see the [Governance Guide](../../docs/G
 | `git log --oneline` | Shows your commit history |
 | `git checkout -b name` | Creates a new branch |
 | `git checkout name` | Switches to a branch |
-| ALM | Application Lifecycle Management — the fancy term for "how you manage your app from dev to production" |
+| ALM | Application Lifecycle Management - the fancy term for "how you manage your app from dev to production" |
 
 ## Stuck?
 
-- Git can feel confusing at first — that's completely normal. The key commands above are all you need today.
-- If a Git command gives you an unexpected message, **don't panic** — raise your hand and we'll sort it out together
-- Raise your hand — Charles, Josh, or a helper will come to you
+- Git can feel confusing at first - that's completely normal. The key commands above are all you need today.
+- If a Git command gives you an unexpected message, **don't panic** - raise your hand and we'll sort it out together
+- Raise your hand - Charles, Josh, or a helper will come to you
 - Still stuck after the event? [Open an issue](../../issues/new/choose)

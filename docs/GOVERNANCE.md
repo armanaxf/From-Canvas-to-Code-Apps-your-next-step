@@ -1,6 +1,6 @@
 # Governance Guide
 
-> How to manage your Code Apps responsibly — solutions, environments, and ALM basics.
+> How to manage your Code Apps responsibly - solutions, environments, and ALM basics.
 
 ## Why Governance Matters
 
@@ -11,7 +11,7 @@ If you've been building Canvas Apps for a while, you've probably hit these probl
 - "How do I move this app from dev to production safely?"
 - "Someone deleted the data source and broke everything"
 
-Code Apps, combined with proper governance, solve all of these. Not because the technology is magic — but because the tools and habits you'll learn here make these problems manageable.
+Code Apps, combined with proper governance, solve all of these. Not because the technology is magic - but because the tools and habits you'll learn here make these problems manageable.
 
 **The good news:** You already understand governance concepts from Canvas Apps. Solutions, environments, and publishing are familiar. Code Apps just give you better tools to manage them.
 
@@ -29,8 +29,8 @@ A solution is a container that holds everything your app needs: the app itself, 
 |---|---|---|
 | How the app lives in a solution | As a single packaged item | As source code that builds into a component |
 | What gets exported | A compiled app package | Source files + a build process |
-| Can you see what changed? | Not easily | Yes — Git shows every line that changed |
-| Can multiple people edit at once? | No — last save wins | Yes — Git handles merging |
+| Can you see what changed? | Not easily | Yes - Git shows every line that changed |
+| Can multiple people edit at once? | No - last save wins | Yes - Git handles merging |
 
 ### How to Package Your Code App
 
@@ -72,7 +72,7 @@ Most organisations use three environments:
 
 We're using a shared development environment. In a real project, you'd have your own dev environment and deploy to shared test/production environments.
 
-> **Canvas App parallel:** You might already separate dev and production environments for Canvas Apps. The concept is identical — Code Apps just make it easier to move between them consistently.
+> **Canvas App parallel:** You might already separate dev and production environments for Canvas Apps. The concept is identical - Code Apps just make it easier to move between them consistently.
 
 ---
 
@@ -100,9 +100,9 @@ Git is the industry standard for tracking code changes. It gives you:
 
 For a small team, this is all you need:
 
-- **`main` branch** — always contains the latest working version
-- **Feature branches** — one per feature or fix (e.g., `add-search-filter`)
-- **Merge when done** — merge feature branches back into main via pull requests
+- **`main` branch** - always contains the latest working version
+- **Feature branches** - one per feature or fix (e.g., `add-search-filter`)
+- **Merge when done** - merge feature branches back into main via pull requests
 
 ```
 main:     ●────●────●────●────●
@@ -126,7 +126,7 @@ Good messages make your history useful:
 
 ### What Is a Pipeline?
 
-A deployment pipeline automates the process of getting your code from development to production. Instead of manually exporting and importing solutions, a pipeline does it for you — every time, the same way, with no mistakes.
+A deployment pipeline automates the process of getting your code from development to production. Instead of manually exporting and importing solutions, a pipeline does it for you - every time, the same way, with no mistakes.
 
 ### Basic Pipeline Flow
 
@@ -146,9 +146,9 @@ Deploy: pac solution import → target environment
 
 For this workshop, you've done the build and deploy steps manually. When you're ready to automate:
 
-1. **Power Platform Pipelines** — built into the Maker Portal, no code needed
-2. **GitHub Actions** — more flexible, defined in your repo as a `.yml` file
-3. **Azure DevOps Pipelines** — common in enterprise settings
+1. **Power Platform Pipelines** - built into the Maker Portal, no code needed
+2. **GitHub Actions** - more flexible, defined in your repo as a `.yml` file
+3. **Azure DevOps Pipelines** - common in enterprise settings
 
 A simple GitHub Actions workflow looks like this:
 
@@ -186,7 +186,7 @@ jobs:
 
 | Role | What they can do |
 |---|---|
-| System Administrator | Everything — manage tables, apps, users |
+| System Administrator | Everything - manage tables, apps, users |
 | Environment Maker | Create apps and flows |
 | Basic User | Use apps, read/write data they have access to |
 
@@ -203,13 +203,13 @@ jobs:
 
 Use this checklist when starting a new Code App project:
 
-- [ ] **Solution created** — with a meaningful publisher name and prefix
-- [ ] **Source control set up** — Git repo with a clear branching strategy
-- [ ] **Environments defined** — at least dev and production
-- [ ] **Security roles configured** — who can access what
-- [ ] **Deployment process documented** — even if manual at first
-- [ ] **Data backup plan** — Dataverse has built-in backup, but verify it's configured
-- [ ] **Team knows the process** — everyone understands how to commit, push, and deploy
+- [ ] **Solution created** - with a meaningful publisher name and prefix
+- [ ] **Source control set up** - Git repo with a clear branching strategy
+- [ ] **Environments defined** - at least dev and production
+- [ ] **Security roles configured** - who can access what
+- [ ] **Deployment process documented** - even if manual at first
+- [ ] **Data backup plan** - Dataverse has built-in backup, but verify it's configured
+- [ ] **Team knows the process** - everyone understands how to commit, push, and deploy
 
 ---
 

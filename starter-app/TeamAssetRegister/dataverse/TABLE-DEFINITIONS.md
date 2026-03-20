@@ -1,6 +1,6 @@
-# Dataverse Table Definitions — Team Asset Register
+# Dataverse Table Definitions - Team Asset Register
 
-> These are the tables you'll use in Dataverse. If you've created tables in Canvas Apps, this will feel familiar — same concept, just set up a bit differently.
+> These are the tables you'll use in Dataverse. If you've created tables in Canvas Apps, this will feel familiar - same concept, just set up a bit differently.
 
 ## Table: Assets (`cr_asset`)
 
@@ -40,7 +40,7 @@ This is the main table. Each row is one piece of equipment.
 
 ## Table: People (`cr_person`)
 
-Optional second table for tracking who assets are assigned to. For the workshop, we keep it simple — `Assigned To` is a text field on the Asset table. If you want to extend the app later, you can create this table and use a lookup column instead.
+Optional second table for tracking who assets are assigned to. For the workshop, we keep it simple - `Assigned To` is a text field on the Asset table. If you want to extend the app later, you can create this table and use a lookup column instead.
 
 | Display Name | Schema Name | Type | Required | Description |
 |---|---|---|---|---|
@@ -61,7 +61,7 @@ Optional second table for tracking who assets are assigned to. For the workshop,
 ### Option B: Using the Power Platform CLI (what we'll do in the workshop)
 
 ```bash
-# You'll learn these commands during the workshop — don't worry about them now
+# You'll learn these commands during the workshop - don't worry about them now
 pac table create --name "Asset" --display-name "Asset" --description "Equipment tracked in the asset register"
 ```
 
@@ -85,4 +85,4 @@ If you've built a Canvas App that connects to Dataverse, you already know:
 - Choices = dropdown options
 - Lookups = relationships between tables
 
-**The only difference in Code Apps is _how_ you access the data — the data itself is exactly the same.**
+**The only difference in Code Apps is _how_ you access the data - the data itself is exactly the same.**

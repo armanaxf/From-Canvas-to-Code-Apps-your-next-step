@@ -1,7 +1,7 @@
 {
   "name": "team-asset-register",
   "version": "1.0.0",
-  "description": "Team Asset Register — Power Platform Code App built at EoEPPS workshop",
+  "description": "Team Asset Register - Power Platform Code App built at EoEPPS workshop",
   "scripts": {
     "build": "pcf-scripts build",
     "clean": "pcf-scripts clean",

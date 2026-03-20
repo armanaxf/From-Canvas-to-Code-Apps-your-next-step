@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for reaching out! We'll do our best to get back to you quickly.
-        Please fill in as much as you can — it helps us understand what happened.
+        Please fill in as much as you can - it helps us understand what happened.
 
   - type: dropdown
     id: module
@@ -46,7 +46,7 @@ body:
     id: what-you-tried
     attributes:
       label: What have you tried so far?
-      description: Let us know what you've already attempted — it helps us skip straight to the solution.
+      description: Let us know what you've already attempted - it helps us skip straight to the solution.
       placeholder: "I tried restarting VS Code and running the command again..."
     validations:
       required: false

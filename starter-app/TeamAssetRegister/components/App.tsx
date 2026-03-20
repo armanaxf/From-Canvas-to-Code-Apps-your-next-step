@@ -1,7 +1,7 @@
 /*
- * App.tsx — The main container for your Code App
+ * App.tsx - The main container for your Code App
  *
- * In Canvas Apps, this would be like your App object — it holds all
+ * In Canvas Apps, this would be like your App object - it holds all
  * your screens and manages navigation between them.
  *
  * Right now it just shows a welcome message. During the workshop,
@@ -13,7 +13,7 @@ import { AssetList } from "./AssetList";
 import { AssetForm } from "./AssetForm";
 import { Header } from "./Header";
 
-// This is the shape of an asset record — like defining columns in a Canvas App data source
+// This is the shape of an asset record - like defining columns in a Canvas App data source
 export interface Asset {
   id: string;
   name: string;
@@ -31,10 +31,10 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ context }) => {
   // ---------------------------------------------------------------
-  // STATE — like Set() and UpdateContext() in Canvas Apps
+  // STATE - like Set() and UpdateContext() in Canvas Apps
   // ---------------------------------------------------------------
 
-  // The list of assets (starts empty — you'll fetch from Dataverse in Module 03)
+  // The list of assets (starts empty - you'll fetch from Dataverse in Module 03)
   const [assets, setAssets] = React.useState<Asset[]>([]);
 
   // Which view is showing: "list" or "form" (like Navigate() in Canvas Apps)
@@ -47,7 +47,7 @@ const App: React.FC<AppProps> = ({ context }) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   // ---------------------------------------------------------------
-  // EVENT HANDLERS — like OnSelect actions in Canvas Apps
+  // EVENT HANDLERS - like OnSelect actions in Canvas Apps
   // ---------------------------------------------------------------
 
   const handleAddNew = () => {
@@ -79,7 +79,7 @@ const App: React.FC<AppProps> = ({ context }) => {
   };
 
   // ---------------------------------------------------------------
-  // RENDER — this is like the screen layout in Canvas Apps
+  // RENDER - this is like the screen layout in Canvas Apps
   // ---------------------------------------------------------------
 
   return (
@@ -102,7 +102,7 @@ const App: React.FC<AppProps> = ({ context }) => {
 };
 
 // ---------------------------------------------------------------
-// STYLES — like setting properties on controls in Canvas Apps
+// STYLES - like setting properties on controls in Canvas Apps
 // ---------------------------------------------------------------
 
 const styles: Record<string, React.CSSProperties> = {

@@ -1,5 +1,5 @@
 /*
- * AssetList.tsx — Displays all assets in a table
+ * AssetList.tsx - Displays all assets in a table
  *
  * In Canvas Apps, this is like a Gallery control bound to your data source.
  * Each row shows one asset with its key details.
@@ -61,7 +61,7 @@ const AssetList: React.FC<AssetListProps> = ({ assets, onEdit }) => {
   );
 };
 
-// Status badge colours — like conditional formatting in Canvas Apps
+// Status badge colours - like conditional formatting in Canvas Apps
 function getStatusStyle(status: string): React.CSSProperties {
   const colours: Record<string, string> = {
     Available: "#107c10",

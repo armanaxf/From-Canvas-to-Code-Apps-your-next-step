@@ -15,7 +15,7 @@ By the end of this module, you will:
 
 ## What You'll Build
 
-A working data layer that connects your Code App to Dataverse tables. You'll fetch records, display them, and save changes — just like you do in Canvas Apps, but with a bit more control.
+A working data layer that connects your Code App to Dataverse tables. You'll fetch records, display them, and save changes - just like you do in Canvas Apps, but with a bit more control.
 
 ## Step-by-Step Instructions
 
@@ -30,11 +30,11 @@ Before writing code, let's check that your Dataverse environment has the tables 
 
 If you don't see it, your hosts will walk you through creating it. The full table definition is in [`starter-app/TeamAssetRegister/dataverse/TABLE-DEFINITIONS.md`](../../starter-app/TeamAssetRegister/dataverse/TABLE-DEFINITIONS.md).
 
-> **Canvas App parallel:** This is exactly the same as checking your data sources exist before building a Canvas App. Same Dataverse, same tables — just a different way of accessing them.
+> **Canvas App parallel:** This is exactly the same as checking your data sources exist before building a Canvas App. Same Dataverse, same tables - just a different way of accessing them.
 
 ### Step 2: Understand how Code Apps talk to Dataverse (5 min)
 
-In Canvas Apps, you add a data source and then just use it — `Filter(Assets, Status = "Available")`. In Code Apps, you use the **Dataverse Web API**. It's a set of web requests that do the same things, but you write them out explicitly.
+In Canvas Apps, you add a data source and then just use it - `Filter(Assets, Status = "Available")`. In Code Apps, you use the **Dataverse Web API**. It's a set of web requests that do the same things, but you write them out explicitly.
 
 Here's the translation:
 
@@ -46,7 +46,7 @@ Here's the translation:
 | `Patch(Assets, ...)` | `POST /api/data/v9.2/cr_assets` (create) or `PATCH /api/data/v9.2/cr_assets(id)` (update) |
 | `Remove(Assets, ...)` | `DELETE /api/data/v9.2/cr_assets(id)` |
 
-Don't worry — you won't have to memorise these URLs. Copilot will help, and we'll build helper functions to keep things simple.
+Don't worry - you won't have to memorise these URLs. Copilot will help, and we'll build helper functions to keep things simple.
 
 ### Step 3: Create the data service (15 min)
 
@@ -58,7 +58,7 @@ Let's create a new file that handles all the Dataverse communication. This keeps
 
 ```typescript
 /*
- * dataService.ts — Handles all communication with Dataverse
+ * dataService.ts - Handles all communication with Dataverse
  *
  * This is like your data source connection in Canvas Apps,
  * but you have more control over exactly what data you fetch.
@@ -99,7 +99,7 @@ export async function fetchAssets(
 }
 ```
 
-> **What just happened?** You wrote a function that calls Dataverse and converts the response into the `Asset` shape your components expect. In Canvas Apps, the platform does this automatically. In Code Apps, you do it yourself — which means you can control exactly what data you get and how it's shaped.
+> **What just happened?** You wrote a function that calls Dataverse and converts the response into the `Asset` shape your components expect. In Canvas Apps, the platform does this automatically. In Code Apps, you do it yourself - which means you can control exactly what data you get and how it's shaped.
 
 5. Add the helper functions for choice labels:
 
@@ -178,7 +178,7 @@ function getStatusValue(label: string): number {
 }
 ```
 
-> **Canvas App parallel:** This is your `Patch()` function — but you've separated create and update, which gives you more control and clearer error messages.
+> **Canvas App parallel:** This is your `Patch()` function - but you've separated create and update, which gives you more control and clearer error messages.
 
 ### Step 5: Wire up the data service to your app (15 min)
 
@@ -217,7 +217,7 @@ const handleSave = async (asset: Asset) => {
 5. Add a `useEffect` to load data when the app first opens. Add this after the state declarations:
 
 ```typescript
-// Load assets when the app first opens — like OnVisible in Canvas Apps
+// Load assets when the app first opens - like OnVisible in Canvas Apps
 React.useEffect(() => {
   const loadAssets = async () => {
     setIsLoading(true);
@@ -229,7 +229,7 @@ React.useEffect(() => {
 }, []);
 ```
 
-> **Canvas App parallel:** `useEffect` is like `OnVisible` — it runs code when the screen first appears. The empty `[]` at the end means "only run this once", like `OnVisible` running when you first navigate to a screen.
+> **Canvas App parallel:** `useEffect` is like `OnVisible` - it runs code when the screen first appears. The empty `[]` at the end means "only run this once", like `OnVisible` running when you first navigate to a screen.
 
 ### Step 6: Test with real data (10 min)
 
@@ -246,7 +246,7 @@ npm start
 4. You should see your Dataverse data in the table
 
 **If the table is empty:**
-- Check `pac auth list` — are you connected to the right environment?
+- Check `pac auth list` - are you connected to the right environment?
 - Check the browser console (F12 > Console tab) for error messages
 - Make sure the table name in `dataService.ts` matches your actual Dataverse table schema name
 
@@ -258,24 +258,24 @@ npm start
 - [ ] You can create a new asset and see it appear in the list
 - [ ] You can edit an existing asset and see the changes saved
 
-**All working? You're connected to real data — that's the big milestone!**
+**All working? You're connected to real data - that's the big milestone!**
 
 ## Key Commands / Concepts
 
 | Concept | What It Means |
 |---------|--------------|
-| Dataverse connector | The bridge between your Code App and your data — same data, different syntax |
-| CRUD operations | Create, Read, Update, Delete — the four things you do with data |
+| Dataverse connector | The bridge between your Code App and your data - same data, different syntax |
+| CRUD operations | Create, Read, Update, Delete - the four things you do with data |
 | `webAPI.retrieveMultipleRecords()` | Fetches rows from a Dataverse table (like browsing a Gallery) |
 | `webAPI.createRecord()` | Creates a new row (like `Patch()` with a blank record) |
 | `webAPI.updateRecord()` | Updates an existing row (like `Patch()` with a specific record) |
 | `async/await` | A way to wait for data to come back before continuing (like how Canvas Apps wait for Patch to finish) |
-| `useEffect` | Runs code when a component loads — like `OnVisible` in Canvas Apps |
+| `useEffect` | Runs code when a component loads - like `OnVisible` in Canvas Apps |
 
 ## Stuck?
 
 - If your data isn't showing up, check your authentication: `pac auth list`
 - Make sure you're pointed at the right environment
 - Check the browser console (F12 > Console) for error messages
-- Raise your hand — Charles, Josh, or a helper will come to you
+- Raise your hand - Charles, Josh, or a helper will come to you
 - Still stuck after the event? [Open an issue](../../issues/new/choose)

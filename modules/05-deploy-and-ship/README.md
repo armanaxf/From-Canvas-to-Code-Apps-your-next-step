@@ -15,7 +15,7 @@ By the end of this module, you will:
 
 ## What You'll Build
 
-The final, deployed version of your Code App — running in a real Power Platform environment. This is the moment where it all comes together.
+The final, deployed version of your Code App - running in a real Power Platform environment. This is the moment where it all comes together.
 
 ## Step-by-Step Instructions
 
@@ -35,7 +35,7 @@ cd ~/Desktop/From-Canvas-to-Code-Apps-your-next-step/starter-app
 npm run rebuild
 ```
 
-This deletes old build files and compiles everything from scratch. Think of it like a full re-publish in Canvas Apps — not just saving, but building the final version.
+This deletes old build files and compiles everything from scratch. Think of it like a full re-publish in Canvas Apps - not just saving, but building the final version.
 
 **Expected output:** Build completes with no errors. If you see warnings (yellow text), those are usually fine. Errors (red text) need to be fixed before continuing.
 
@@ -45,7 +45,7 @@ This deletes old build files and compiles everything from scratch. Think of it l
 |---|---|
 | `Cannot find module` | Run `npm install` again |
 | `Type error` | Check that your `dataService.ts` imports match the function signatures |
-| `Syntax error` | Look at the line number in the error — usually a missing bracket or comma |
+| `Syntax error` | Look at the line number in the error - usually a missing bracket or comma |
 
 ### Step 2: Package the solution (10 min)
 
@@ -70,7 +70,7 @@ cd Solution
 pac solution pack --zipfile ../AssetRegister_1_0_0.zip --packagetype Unmanaged
 ```
 
-This creates a `.zip` file — that's your solution package.
+This creates a `.zip` file - that's your solution package.
 
 > **Canvas App parallel:** This is like exporting a solution from the Maker Portal, but done from the command line. The result is the same `.zip` file you'd get from the portal.
 
@@ -124,10 +124,10 @@ pac solution import --path AssetRegister_1_0_0.zip --activate-plugins
 
 1. Open [make.powerapps.com](https://make.powerapps.com)
 2. Switch to your target environment
-3. Go to **Solutions** — you should see the Asset Register solution
-4. Open it — your Code App component should be inside
+3. Go to **Solutions** - you should see the Asset Register solution
+4. Open it - your Code App component should be inside
 
-> **Canvas App parallel:** This is identical to importing a solution in the Maker Portal — you've just done it from the command line, which means it can be automated.
+> **Canvas App parallel:** This is identical to importing a solution in the Maker Portal - you've just done it from the command line, which means it can be automated.
 
 ### Step 5: Test your deployed app (10 min)
 
@@ -138,7 +138,7 @@ pac solution import --path AssetRegister_1_0_0.zip --activate-plugins
    - [ ] Can you create a new asset?
    - [ ] Can you edit an existing asset?
    - [ ] Do the status badges show the right colours?
-   - [ ] Does the data persist (refresh the page — is it still there)?
+   - [ ] Does the data persist (refresh the page - is it still there)?
 
 If something doesn't work, check:
 - The Dataverse tables exist in the target environment
@@ -152,7 +152,7 @@ Save your final state to Git:
 ```bash
 cd ~/Desktop/From-Canvas-to-Code-Apps-your-next-step
 git add .
-git commit -m "Final workshop build — deployed asset register"
+git commit -m "Final workshop build - deployed asset register"
 git push
 ```
 
@@ -160,21 +160,21 @@ git push
 
 Let's step back and appreciate what you've done:
 
-1. **Set up a professional development environment** — VS Code, Git, Power Platform CLI
-2. **Understood Code App architecture** — and mapped it to concepts you already know
-3. **Connected to Dataverse** — reading and writing data with code
-4. **Set up governance** — solutions, Git version control, branches
-5. **Built, packaged, and deployed** — a real Code App to a real environment
+1. **Set up a professional development environment** - VS Code, Git, Power Platform CLI
+2. **Understood Code App architecture** - and mapped it to concepts you already know
+3. **Connected to Dataverse** - reading and writing data with code
+4. **Set up governance** - solutions, Git version control, branches
+5. **Built, packaged, and deployed** - a real Code App to a real environment
 
 **That's a production-grade workflow.** Many professional developers follow exactly these steps. And you did it in a day.
 
 ### What to Do Next
 
-- **Keep this repo** — fork it on GitHub so you always have a reference
-- **Build another app** — repeat these steps with your own idea (the commands are all in this repo)
-- **Explore the [resources](../../resources/links.md)** — Microsoft Learn has deeper dives on everything we covered
-- **Join the community** — the Power Platform Community and PnP group are full of people on the same journey
-- **Share what you built** — show your team, your manager, or post about it
+- **Keep this repo** - fork it on GitHub so you always have a reference
+- **Build another app** - repeat these steps with your own idea (the commands are all in this repo)
+- **Explore the [resources](../../resources/links.md)** - Microsoft Learn has deeper dives on everything we covered
+- **Join the community** - the Power Platform Community and PnP group are full of people on the same journey
+- **Share what you built** - show your team, your manager, or post about it
 
 ## Key Commands / Concepts
 
@@ -184,12 +184,12 @@ Let's step back and appreciate what you've done:
 | `pac solution pack` | Packages your solution into a `.zip` file |
 | `pac solution import` | Imports a solution into a Power Platform environment |
 | `pac auth select` | Switches to a different authenticated environment |
-| Managed solution | Locked for production — users can use it but can't modify it |
-| Unmanaged solution | Open for development — you can edit everything |
+| Managed solution | Locked for production - users can use it but can't modify it |
+| Unmanaged solution | Open for development - you can edit everything |
 
 ## Stuck?
 
-- Deployment issues are almost always environment or permission related — check your `pac auth list` first
+- Deployment issues are almost always environment or permission related - check your `pac auth list` first
 - If the import fails, check that you're targeting the right environment
-- Raise your hand — Charles, Josh, or a helper will come to you
+- Raise your hand - Charles, Josh, or a helper will come to you
 - Still stuck after the event? [Open an issue](../../issues/new/choose)

@@ -21,7 +21,7 @@ A project plan and folder structure for your Code App. You'll start from the sta
 
 ### Step 1: Understand the project structure (10 min)
 
-Open the `starter-app` folder in VS Code and let's walk through what each file does. Don't panic at the number of files — most of them are configuration that you set up once and never touch again.
+Open the `starter-app` folder in VS Code and let's walk through what each file does. Don't panic at the number of files - most of them are configuration that you set up once and never touch again.
 
 **Files you'll work in every day:**
 
@@ -39,7 +39,7 @@ Open the `starter-app` folder in VS Code and let's walk through what each file d
 | `package.json` | Lists your app's dependencies (like a shopping list of tools) |
 | `tsconfig.json` | TypeScript settings (the language your code is written in) |
 | `ControlManifest.Input.xml` | Tells Power Platform about your component |
-| `index.ts` | Entry point — connects your React components to Power Platform |
+| `index.ts` | Entry point - connects your React components to Power Platform |
 
 > **Key insight:** In Canvas Apps, everything is in one place (the studio). In Code Apps, things are separated into files. This feels like more work at first, but it means you can find things more easily and multiple people can work on the app at the same time.
 
@@ -121,7 +121,7 @@ export interface Asset {
 }
 ```
 
-This defines the "shape" of your data. In Canvas Apps, you'd see these as columns in your data source. Here, you define them explicitly — which means TypeScript can warn you if you try to use a field that doesn't exist.
+This defines the "shape" of your data. In Canvas Apps, you'd see these as columns in your data source. Here, you define them explicitly - which means TypeScript can warn you if you try to use a field that doesn't exist.
 
 For the full Dataverse table definitions (columns, choice values, sample data), see:
 [`starter-app/TeamAssetRegister/dataverse/TABLE-DEFINITIONS.md`](../../starter-app/TeamAssetRegister/dataverse/TABLE-DEFINITIONS.md)
@@ -154,7 +154,7 @@ Answer these questions (in your head or with a neighbour):
 
 ## Stuck?
 
-- This is the "thinking" module — there's no wrong answer at the planning stage
+- This is the "thinking" module - there's no wrong answer at the planning stage
 - Chat with your neighbour about what they're building
-- Raise your hand — Charles, Josh, or a helper will come to you
+- Raise your hand - Charles, Josh, or a helper will come to you
 - Still stuck after the event? [Open an issue](../../issues/new/choose)
